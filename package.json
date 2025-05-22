@@ -1,0 +1,16 @@
+{
+  "name": "tool-workshop",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "live-server"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "live-server": "^1.2.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}

@@ -22,7 +22,139 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <!-- Lag slides her -->
+        <section>
+          <h2>Faggruppemøte: Lag et verktøy</h2>
+          <ul>
+            <li>Hva er et utviklerverktøy?</li>
+            <li>Eksempler på scripts (CLI)</li>
+            <li>Eksempler på SPAs</li>
+            <li>Eksempler på full-stack/hybrid-verktøy</li>
+            <li>Når velge hva?</li>
+            <li>Deling/publisering av verktøy</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Hva er et utviklerverktøy?</h2>
+          <ul>
+            <li>Løs små eller store hverdagsproblemer</li>
+            <li>
+              Automatiserer, effektiviserer, eller visualiserer arbeidsoppgaver
+            </li>
+            <li>Kan være alt fra et lite script til en full webapp</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Hvordan gå fram?</h2>
+          <ol>
+            <li>Kartlegg oppgaver du gjør ofte eller som tar tid</li>
+            <li>Bryt ned i konkrete steg</li>
+            <li>Finn variasjoner/parametre</li>
+            <li>Avklar autentisering/tilgang</li>
+            <li>Skissér enkel løsning</li>
+            <li>Bygg og iterer</li>
+            <li>Del og forbedre</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Eksempler på scripts (CLI)</h2>
+          <ul>
+            <li>Bash, Python, Node.js, PowerShell, osv.</li>
+            <li>Automatisering, filbehandling, API-kall</li>
+            <li>Ofte raskest å komme i gang</li>
+            <li>
+              CLI-biblioteker: Click (Python), Commander (Node), Clap (Rust),
+              fzf (bash)
+            </li>
+            <li>Bruk .env-filer for konfig</li>
+            <li>
+              Prompts og interaktivitet (fzf, read, questionary, inquirer)
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Tips for CLI-verktøy</h2>
+          <ul>
+            <li>
+              Velg språk etter behov: Bash for enkle oppgaver, Python/Node for
+              mer logikk
+            </li>
+            <li>Bruk CLI-biblioteker for bedre UX</li>
+            <li>fzf gir raske valg i terminalen</li>
+            <li>Ikke hardkod sensitive data – bruk .env</li>
+            <li>Gi alltid en help-opsjon og gode feilmeldinger</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Eksempler på SPA-verktøy</h2>
+          <ul>
+            <li>Dashboards, visualisering, intern selvbetjening</li>
+            <li>Lages ofte med React, Vue, Svelte m.m.</li>
+            <li>Bruk komponentbibliotek for rask UI-utvikling</li>
+            <li>localStorage for enkel lagring</li>
+            <li>Unngå routing hvis mulig</li>
+            <li>Enkel autentisering: bruk ditt eget token</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Tips for GUI/SPA</h2>
+          <ul>
+            <li>Velg ett komponentbibliotek og lær det godt</li>
+            <li>Litt styling gir stor gevinst</li>
+            <li>localStorage for lagring av småting</li>
+            <li>Unngå routing om det ikke trengs</li>
+            <li>React + TypeScript + Tanstack Query + fetch dekker mye</li>
+            <li>Dropp auth-flyt hvis du kan – bruk tokenfelt</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Eksempler på full-stack/hybrid</h2>
+          <ul>
+            <li>Next.js, Remix, TanStack Start – både frontend og backend</li>
+            <li>Verktøy som kaller shell-kommandoer via API</li>
+            <li>Desktop-apper: Electron, Tauri</li>
+            <li>API først – frontend og CLI kan bruke samme API</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Tips for full-stack/hybrid</h2>
+          <ul>
+            <li>Start med en enkel template for ditt favoritt-rammeverk</li>
+            <li>Bruk execa for å kjøre kommandoer (Node)</li>
+            <li>Valider og saniter input før du kjører shell</li>
+            <li>Lag API-endepunkter for gjenbruk</li>
+            <li>Logg handlinger/serverresultater</li>
+            <li>Start uten database – legg til senere hvis nødvendig</li>
+            <li>Hold autentisering enkelt for interne verktøy</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Deling og publisering</h2>
+          <ul>
+            <li>Del på Github, interne repo, npm, pip osv.</li>
+            <li>Lag kort dokumentasjon eller eksempler</li>
+            <li>Vurder om det er nyttig for flere</li>
+            <li>Enkelt å utvide/forbedre over tid</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Workshop: Bygg et eget verktøy!</h2>
+          <ul>
+            <li>Velg noe du ofte gjør – automatiser det</li>
+            <li>CLI, SPA eller full-stack, valgfritt nivå</li>
+            <li>Jobb alene eller i par</li>
+            <li>Demo og del erfaringer til slutt</li>
+          </ul>
+        </section>
       </div>
     </div>
 
