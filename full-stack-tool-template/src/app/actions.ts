@@ -1,6 +1,6 @@
 'use server'
 
-import { execa } from 'execa'
+import { $ } from 'execa'
 
 export async function listDirectoryContents(
   directory: string = '.'
@@ -10,7 +10,7 @@ export async function listDirectoryContents(
     // However, for this specific case of `ls -la` on a given directory, if the directory is validated
     // or comes from a trusted source, it can be acceptable.
     // Here, we'll default to the current directory if none is provided.
-    const { stdout, stderr } = await execa('ls', ['-la', directory])
+    const { stdout, stderr } = await $`ls -la ${directory}`
 
     if (stderr) {
       // Consider logging stderr or handling it differently
